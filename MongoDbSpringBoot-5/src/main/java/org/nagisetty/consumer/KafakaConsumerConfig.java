@@ -29,7 +29,7 @@ public class KafakaConsumerConfig {
 	
 	@Bean
 	public ConsumerFactory<String,Student> consumerConfig(){
-		
+		System.out.println("The  Consumer Factory");
 		Map<String,Object>  config = new HashMap<String,Object>();
 		config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaServer);
 		config.put(ConsumerConfig.GROUP_ID_CONFIG, kafakGroupId);
